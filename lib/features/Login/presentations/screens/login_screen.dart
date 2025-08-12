@@ -87,7 +87,7 @@ class LoginPage extends ConsumerWidget {
                             child: ElevatedButton(
 
                               onPressed: (){
-                                context.go('/home');
+                                context.push('/home');
                               },
                               // onPressed: loginState is AsyncLoading
                               //     ? null
