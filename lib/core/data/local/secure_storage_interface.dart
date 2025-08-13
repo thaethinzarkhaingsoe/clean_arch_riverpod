@@ -1,4 +1,4 @@
-abstract interface class InterfaceStorage{
+abstract interface class InterfaceSecureStorage{
   Future<String> read(String key);
 
   Future<void> write(String key, String value);

@@ -4,12 +4,12 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 import 'flutter_secure_storage_provider.dart';
 
-final secureStorage = Provider<InterfaceStorage>((ref){
-  final secureStorage = ref.watch(flutterSecureStorageProvider);
+final secureStorage = Provider<InterfaceSecureStorage>((ref){
+  final secureStorage = ref.watch(secureStorageProvider);
   return SecureStorage(secureStorage);
 });
 
-final class SecureStorage implements InterfaceStorage{
+final class SecureStorage implements InterfaceSecureStorage{
   final FlutterSecureStorage _flutterSecureStorage ;
 
   SecureStorage(this._flutterSecureStorage);
